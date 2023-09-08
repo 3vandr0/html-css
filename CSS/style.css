@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Helvetica;
+    src: url("../Fonts/Helvetica_Now/HelveticaNowText-Regular.otf") format(opentype);
+    font-weight: normal;
+}
+:root {
+    --cor0: #0000f2;
+    --cor1: #116d14;
+    --cor2: #f2b90c;
+    --cor3: #9900ff;
+    --cor4: #9ac9ff;
+    --cor5: #9ee655;
+    --cor6: #ffe5b3;
+    --cor7: #cc99ff;
+
+    --font-default: Arial, Helvetica, Georgia, Sans-serif;
+    --font-Helvetica-Now: 'Helvetica', regular;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #ffffff;
+    font-family: var(--font-Helvetica-Now);
+    font-size: 24px;
+}
+
+h1 {
+    font-size: 80px;
+    margin: 0px;
+}
+
+h2 {
+    font-size: 60px;
+    margin: 0px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+ section {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+}
+
+/*navegação*/
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 45px;
+}
+
+nav ul li a {
+    color: #000;
+    font-family: var(--font-Helvetica-Now);
+}
+
+nav ul li a:hover{
+    font-family: var(--font-Helvetica-Now);
+    font-weight: 600;
+
+}
+
+/*section1*/
+
+section.section1 .block {
+    flex-basis: 100vw;
+    border-radius: 30px;
+    margin: 10px;
+    width: 450px;
+    height: 200px;
+}
+
+div#img1 {
+    background-color: var(--cor5);
+    background-position: left top;
+}
+
+div#img2 {
+    background-color: var(--cor6);
+    background-position: center center;
+}
+
+div#img3 {
+    background-color: var(--cor4);
+    background-position: right top;
+}
+
+section.section1 article {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+}
+
+section.section1 article .square1 {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    background: var(--cor7);
+    border-radius: 30px;
+    padding: 6.27vh;
+    margin: 10px;
+    background-position: bottom center;
+}
+
+
